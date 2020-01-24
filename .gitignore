@@ -1,0 +1,8 @@
+# VSCode local config
+.vscode
+
+# macOS
+.DS_Store
+
+# local dirs
+playground
