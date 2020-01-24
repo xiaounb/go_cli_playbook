@@ -14,13 +14,11 @@ func main() {
 	}
 	defer f.Close()
 
-	r := bufio.NewReader(f)
-	for {
-		s, err := r.ReadString('\n') // TODO: cross-platform
-		if err != nil {
-			break
-		}
+	scanner := bufio.NewScanner(f)
+	scanner.Split(bufio.ScanLines)
 
-		fmt.Println(s)
+	for scanner.Scan() {
+		t := scanner.Text()
+		fmt.Println(t)
 	}
 }
