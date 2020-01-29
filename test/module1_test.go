@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestNakedCall(t *testing.T) {
+func TestModule1NakedCall(t *testing.T) {
 	found := OpenFileAndFindString("../src/module1.txt", "go env")
 
 	if !found {
@@ -12,7 +12,7 @@ func TestNakedCall(t *testing.T) {
 	}
 }
 
-func TestJsonOutput(t *testing.T) {
+func TestModule1JsonOutput(t *testing.T) {
 	found := OpenFileAndFindString("../src/module1.txt", "go env -json")
 
 	if !found {
