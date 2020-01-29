@@ -8,7 +8,8 @@ Consistent format makes reading the source easier, both as the source file and t
 Here's an excerpt of [Formatting](https://golang.org/doc/effective_go.html#formatting) section in [Effective Go](https://golang.org/doc/effective_go.html):
 ```
 With Go we take an unusual approach and let the machine take care of most formatting issues. 
-The `gofmt` program and `go fmt` reads a Go program and emits the source in a standard style of indentation and vertical alignment, retaining and if necessary reformatting comments.
+The `gofmt` program and `go fmt` reads a Go program and emits the source in a standard style of
+indentation and vertical alignment, retaining and if necessary reformatting comments.
 ```
 
 ## Verify locally
