@@ -2,8 +2,13 @@
 This module teaches how to use the format sub-command and the standalone program to format `Go` programs.
 It also touches a bit on the design decisions for formatting of `Go` programs.
 
-## Philosophy of Go regarding formatting
-TODO
+## Go's approach regarding formatting
+Consistent format makes reading the source easier, both as the source file and the diff in code reviews.
+
+Here's an excerpt of [Formatting](https://golang.org/doc/effective_go.html#formatting) section in [Effective Go](https://golang.org/doc/effective_go.html):
+```
+With Go we take an unusual approach and let the machine take care of most formatting issues. The `gofmt` program (also available as `go fmt`, which operates at the package level rather than source file level) reads a Go program and emits the source in a standard style of indentation and vertical alignment, retaining and if necessary reformatting comments.
+```
 
 ## Verify locally
 To test this module locally:
@@ -33,7 +38,7 @@ Open a file named `module2.txt` and write the `gofmt` command to format a source
 
 ## Task 2: Use `go fmt` with proper flags
 `go fmt` takes following input:
-- (`stdin`)[https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)]: when without an explicit file or path
+- [`stdin`](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)): when without an explicit file or path
 - file: when given a file
 - all .go files under a directory: when given a directory
 
