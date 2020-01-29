@@ -13,7 +13,7 @@ func TestModule2NakedCall(t *testing.T) {
 }
 
 func TestModule2DefaultParams(t *testing.T) {
-	found := OpenFileAndFindString("../src/module2.txt", "gofmt -l -w .")
+	found := OpenFileAndFindString("../src/module2.txt", "gofmt -l -w common.go")
 
 	if !found {
 		t.Errorf("See 'go help fmt' for more details")

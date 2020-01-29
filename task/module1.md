@@ -6,7 +6,8 @@ Then you can examining the `go` environment manually or through a tool like `gre
 To test this module locally:
 * Open up a terminal at the project root
 * Run command `cd test` to change to the `test` directory
-* Run command `go test -run Module1` to run all tests for module 1
+* Run command `go test -run Module1` to run all tests for module 1, or
+* Run command `go test -v -run Module1` to run all tests for module 1 with verbose information
 
 
 ## Task 1: Print the environment information
@@ -26,3 +27,8 @@ Recall what you have read in the above documentation and check flags that are av
 What is the flag to specify the output to be in JSON format?
 
 Write the complete command (go + sub-command + flag) under your answer for Task 1, and save the `module1.txt` file.
+
+## Extra help
+Here are the commands to get more information on `go env` and `Go` environment:
+- `go help env`
+- `go help environment`

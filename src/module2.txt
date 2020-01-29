@@ -1,2 +1,2 @@
 gofmt common.go
-gofmt -l -w .
+gofmt -l -w common.go
