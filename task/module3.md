@@ -18,6 +18,21 @@ Notice how `go get` is being used to download and install the `goimports` comman
 
 Now, open a file named `module3.txt` and write down the complete command to install `goimports`.
 
+### troubleshooting
+You might encounter the error in command line which says "goimports: command not found".
+
+Make sure following environment variables are defined properly.
+the way to set up the environment variables are depending on the operating system you are using (Windows, Linux, MacOS).
+
+Following is the example `~/.zshrc` file on MacOS:
+```
+# for golang
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+```
+
+Close and reopen the command line program for the above change to take effect.
+
 
 ## Task 1: fix a specific package
 
