@@ -34,7 +34,12 @@ This time we use `go fmt`.
 
 Write the complete command to format the provided `module2_content.go` file.
 
+
 What changes are made between the before and after version of `module2_content.go`?
+
+Bonus questions:
+- Are there changes that can be made by, but not made?
+- What are some limitations of the `go fmt` command?
 
 
 ## Task 2: Format `Go` source code using a standalone program
