@@ -1,2 +1,2 @@
-gofmt common.go
-gofmt -l -w common.go
+go fmt module2_content.go
+gofmt -l -w module2_content.go
