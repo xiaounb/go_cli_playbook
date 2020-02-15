@@ -4,12 +4,16 @@ import (
 	"bufio"
 	"log"
 	"os"
+	"path"
 	"strings"
 )
 
-// FindFileAtPath returns if the given filename is found at the given path
-func FindFileAtPath(path string, filename string) bool {
-	return false
+// FindFileAtPath returns if theFilename is found at thePath
+func FindFileAtPath(thePath string, theFilename string) bool {
+	if _, err := os.Stat(path.Join(thePath, theFilename)); os.IsNotExist(err) {
+		return false
+	}
+	return true
 }
 
 // OpenFileAndCountLines opens a file and returns number of lines in the file

@@ -1,9 +1,15 @@
 package main
 
-import "testing"
+import (
+	"os"
+	"path"
+	"testing"
+)
 
 func TestModule3InstallationOfgoimports(t *testing.T) {
-	found := FindFileAtPath("foo", "bar")
+	binPath := path.Join(os.Getenv("GOPATH"), "bin")
+	found := FindFileAtPath(binPath, "goimports")
+
 	if !found {
 		t.Errorf("goimports cannot be found")
 	}
