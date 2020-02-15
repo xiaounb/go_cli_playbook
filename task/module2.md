@@ -20,7 +20,24 @@ To test this module locally:
 - Run command `go test -run Module2` to run all tests for module 2, or 
 - Run command `go test -v -run Module2` to run all tests for module 2 with verbose information 
 
-## Task 1: Format `Go` source code using a standalone program
+
+## Task 1: Use `go fmt` with proper flags
+`go fmt` takes following input:
+- file: when given a file
+- all .go files under a directory: when given a directory
+- [`stdin`](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)): when there is no explicit file or path
+
+Run the command `go help fmt` and examine the provided information.
+
+What command do we use to achieve the same result with that in Task 1?
+This time we use `go fmt`.
+
+Write the complete command to format the provided `module2_content.go` file.
+
+What changes are made between the before and after version of `module2_content.go`?
+
+
+## Task 2: Format `Go` source code using a standalone program
 Note that there are two tools when using formatting in `Go`:
 - `gofmt` is a standalone program (typically available as `bin/gofmt`)
 - `go fmt` calls `go` command with a sub-command `fmt`
@@ -35,21 +52,9 @@ Usage is as follows:
 ```
 here, `path` can be a file or a directory.
 
-Open a file named `module2.txt` and write the `gofmt` command to format a source file named `common.go`.
+What flags should be used to achieve the exact same effect as Task 1.
 
-
-## Task 2: Use `go fmt` with proper flags
-`go fmt` takes following input:
-- [`stdin`](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)): when without an explicit file or path
-- file: when given a file
-- all .go files under a directory: when given a directory
-
-Run the command `go help fmt` and examine the provided information.
-
-What command do we use to achieve the same result with that in Task 1?
-This time we use `go fmt`.
-
-Write the complete command (equivalent of the answer in Task 1), in the `module2.txt` file.
+Write the `gofmt` command to format a source file named `module2_content.go`.
 
 
 
