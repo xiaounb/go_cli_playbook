@@ -16,7 +16,7 @@ To test this module locally:
 Read the first paragraph in the documentation of [Command goimports](https://godoc.org/golang.org/x/tools/cmd/goimports).
 Notice how `go get` is being used to download and install the `goimports` command.
 
-Now, open a file named `module3.txt` and write down the complete command to install `goimports`.
+Now, write down the complete command to install `goimports`.
 
 ### troubleshooting
 You might encounter the error in command line which says "goimports: command not found".
