@@ -7,6 +7,11 @@ import (
 	"strings"
 )
 
+// FindFileAtPath returns if the given filename is found at the given path
+func FindFileAtPath(path string, filename string) bool {
+	return false
+}
+
 // OpenFileAndCountLines opens a file and returns number of lines in the file
 func OpenFileAndCountLines(filename string) int {
 	f, err := os.Open(filename)
