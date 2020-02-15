@@ -1,5 +1,5 @@
 package main
 import "fmt"
-func main() {
+func module2Content() {
 	fmt.Println("hello world")
 }
