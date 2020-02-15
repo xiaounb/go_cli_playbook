@@ -1,21 +1,16 @@
 package main
 
 import (
+	"os"
+	"path"
 	"testing"
 )
 
-func TestModule1NakedCall(t *testing.T) {
-	found := OpenFileAndFindString("../src/module1.txt", "go env")
+func TestModule1CheckEnv(t *testing.T) {
+	actual := os.Getenv("GOPATH")
+	expected := path.Join(os.Getenv("HOME"), "go")
 
-	if !found {
-		t.Errorf("'go env' not found in the command")
-	}
-}
-
-func TestModule1JsonOutput(t *testing.T) {
-	found := OpenFileAndFindString("../src/module1.txt", "go env -json")
-
-	if !found {
-		t.Errorf("'go env' should be called with the '-json' flag")
+	if actual != expected {
+		t.Errorf("environment variable GOPATH not set properly")
 	}
 }
