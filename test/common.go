@@ -7,6 +7,23 @@ import (
 	"strings"
 )
 
+// OpenFileAndCountLines opens a file and returns number of lines in the file
+func OpenFileAndCountLines(filename string) int {
+	f, err := os.Open(filename)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+	number := 0
+	for scanner.Scan() {
+		number++
+	}
+
+	return number
+}
+
 // OpenFileAndFindString opens a file and return if the given string is found or not
 func OpenFileAndFindString(filename string, expected string) bool {
 	f, err := os.Open(filename)
