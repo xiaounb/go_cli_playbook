@@ -11,4 +11,17 @@ To test this module locally:
 * Run command `go test -v -run Module3` to run all tests for module 3 with verbose information
 
 ## Task 1
-TODO
+To add dependencies to current module and install the packages, we use the [`go get` command](https://golang.org/cmd/go/#hdr-Add_dependencies_to_current_module_and_install_them).
+The syntax can be as simple as this:
+```
+go get <package>
+```
+
+The above `package` can be the git repo of the package if hosted on github (that is, without the `https://` prefix).
+
+Your task is to write a command to import the following package which can be used to retrieve the sunrise and sunset time given a location and a date. Here is the github repo:
+```
+https://github.com/nathan-osman/go-sunrise
+```
+
+
