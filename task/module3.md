@@ -25,3 +25,10 @@ https://github.com/nathan-osman/go-sunrise
 ```
 
 
+
+## Extra help
+Here is the command to get more information on `go get`: 
+- `go help get`
+
+To list all packages in the module, you can use `go list -m all`. Help on `list` can be found at:
+- `go help list`
