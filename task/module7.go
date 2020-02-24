@@ -1,3 +1,3 @@
 package main
 
-//go:generate $GOLINE
+//go:generate goimports module7_content.go
