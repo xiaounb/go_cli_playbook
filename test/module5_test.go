@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestModule4InstallationOfgoimports(t *testing.T) {
+func TestModule5InstallationOfgoimports(t *testing.T) {
 	binPath := path.Join(os.Getenv("GOPATH"), "bin")
 	found := FindFileAtPath(binPath, "goimports")
 
