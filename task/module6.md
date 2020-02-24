@@ -1,6 +1,6 @@
 ## Purpose of this module
 This module will teach you how to use `go doc` to prints the documentation for a package, a function, a variable, or a method.
-We will learn the `go doc` command and the possible parameters
+We will learn the `go doc` command and the possible parameters available to it
 
 
 ## Verify locally
