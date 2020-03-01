@@ -1,2 +1,0 @@
-go fmt module2_content.go
-gofmt -l -w module2_content.go
