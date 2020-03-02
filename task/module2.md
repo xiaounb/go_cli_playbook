@@ -59,7 +59,7 @@ here, `path` can be a file or a directory.
 
 What flags should be used to achieve the exact same effect as Task 1.
 
-Write the `gofmt` command to format a source file named `module2_content.go`.
+Write the `gofmt` command to format a source file named `module2_code.go`.
 
 
 
