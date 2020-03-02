@@ -46,3 +46,7 @@ Write the complete `goimports` command to import the missing package.
 
 
 ## Extra help
+TODO: add text
+```
+goimports --help
+```
