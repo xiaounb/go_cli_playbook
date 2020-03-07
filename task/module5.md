@@ -7,7 +7,7 @@ which is used to import missing packages.
 To test this module locally:
 
 - Open up a terminal at the project root
-- Run command `cd test` to change to the test directory
+- Run command `cd module5` to change to the `module5` directory
 - Run command `go test -run Module5` to run all tests for module 5, or 
 - Run command `go test -v -run Module5` to run all tests for module 5 with verbose information 
 

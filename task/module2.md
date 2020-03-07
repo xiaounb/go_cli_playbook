@@ -16,7 +16,7 @@ indentation and vertical alignment, retaining and if necessary reformatting comm
 To test this module locally:
 
 - Open up a terminal at the project root
-- Run command `cd test` to change to the test directory
+- Run command `cd module2` to change to the `module2` directory
 - Run command `go test -run Module2` to run all tests for module 2, or 
 - Run command `go test -v -run Module2` to run all tests for module 2 with verbose information 
 
@@ -32,14 +32,7 @@ Run the command `go help fmt` and examine the provided information.
 What command do we use to achieve the same result with that in Task 1?
 This time we use `go fmt`.
 
-Write the complete command to format the provided `module2_content.go` file.
-
-
-What changes are made between the before and after version of `module2_content.go`?
-
-Bonus questions:
-- Are there changes that can be made by, but not made?
-- What are some limitations of the `go fmt` command?
+Write the complete command to format the provided `module2_code.go` file.
 
 
 ## Task 2: Format `Go` source code using a standalone program
@@ -57,7 +50,7 @@ Usage is as follows:
 ```
 here, `path` can be a file or a directory.
 
-What flags should be used to achieve the exact same effect as Task 1.
+What flags should be used to achieve the exact same effect as Task 1?
 
 Write the `gofmt` command to format a source file named `module2_code.go`.
 

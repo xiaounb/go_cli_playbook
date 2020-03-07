@@ -6,7 +6,7 @@ We will learn the `go doc` command and the possible parameters available to it
 ## Verify locally
 To test this module locally:
 * Open up a terminal at the project root
-* Run command `cd test` to change to the `test` directory
+* Run command `cd module6` to change to the `module6` directory
 * Run command `go test -run Module6` to run all tests for module 6, or
 * Run command `go test -v -run Module6` to run all tests for module 6 with verbose information
 

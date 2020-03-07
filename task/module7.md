@@ -5,7 +5,7 @@ This module will teach you how to use `go generate` to scan for directives and g
 ## Verify locally
 To test this module locally:
 * Open up a terminal at the project root
-* Run command `cd test` to change to the `test` directory
+* Run command `cd module7` to change to the `module7` directory
 * Run command `go test -run Module7` to run all tests for module 7, or
 * Run command `go test -v -run Module7` to run all tests for module 7 with verbose information
 

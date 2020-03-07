@@ -5,7 +5,7 @@ Then you can examining the `go` environment manually or through a tool like `gre
 ## Verify locally
 To test this module locally:
 * Open up a terminal at the project root
-* Run command `cd test` to change to the `test` directory
+* Run command `cd module1` to change to the `module1` directory
 * Run command `go test -run Module1` to run all tests for module 1, or
 * Run command `go test -v -run Module1` to run all tests for module 1 with verbose information
 
