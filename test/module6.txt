@@ -1,5 +1,0 @@
-package main // import "."
-
-func FunctionForModule6GoDoc()
-    FunctionForModule6GoDoc is a function with some comment
-
